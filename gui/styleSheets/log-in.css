@@ -1,0 +1,16 @@
+.theme{
+    -fx-background-color: linear-gradient(to right, rgba(39, 0, 53, 0.7), rgba(8, 0, 53, 0.7));
+    -fx-border-radius: 10 10 0 0;
+}
+.root{
+    -fx-background-color: rgba(0, 0, 0, 0.0);
+    -fx-background-insets: 40;
+    -fx-effect: dropshadow(gaussian, rgb(53, 16, 99), 40, 0, 0, 0);
+    -fx-border-radius: 20;
+}
+
+.label{
+    -fx-text-fill: #FFFFFF;
+}
+
+

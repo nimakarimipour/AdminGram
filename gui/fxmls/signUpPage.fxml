@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.Font?>
+<GridPane id="main-pane" alignment="center" hgap="10" vgap="10" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.controllers.SignUpController">
+    <columnConstraints>
+        <ColumnConstraints />
+        <ColumnConstraints />
+    </columnConstraints>
+    <rowConstraints>
+        <RowConstraints />
+    </rowConstraints>
+    <children>
+        <AnchorPane prefHeight="530.0" prefWidth="497.0" GridPane.columnIndex="1">
+            <children>
+                <BorderPane prefHeight="533.0" prefWidth="502.0" AnchorPane.bottomAnchor="0.0" AnchorPane.topAnchor="40.0">
+                    <center>
+                        <Pane prefHeight="244.0" prefWidth="502.0" BorderPane.alignment="TOP_CENTER">
+                     <children>
+                        <BorderPane layoutX="-3.0" layoutY="-6.0" prefHeight="249.0" prefWidth="502.0">
+                           <center>
+                              <VBox prefHeight="235.0" prefWidth="495.0" spacing="20.0" BorderPane.alignment="CENTER">
+                                 <children>
+                                    <TextField fx:id="username" promptText="Username" style="-fx-background-color: linear-gradient(to right, rgba(26, 255, 140, 0.7), rgba(26, 255, 255, 0.7));" />
+                                    <TextField fx:id="mail" promptText="Mail" style="-fx-background-color: linear-gradient(to right, rgba(26, 255, 140, 0.7), rgba(26, 255, 255, 0.7));" />
+                                    <TextField fx:id="phoneNumber" prefHeight="27.0" prefWidth="389.0" promptText="Phone-Number (Optional)" style="-fx-background-color: linear-gradient(to right, rgba(26, 255, 140, 0.7), rgba(26, 255, 255, 0.7));" />
+                                    <PasswordField fx:id="password" promptText="Password" style="-fx-background-color: linear-gradient(to right, rgba(26, 255, 140, 0.7), rgba(26, 255, 255, 0.7));" />
+                                    <PasswordField fx:id="confirmPassword" promptText="Confirm Password" style="-fx-background-color: linear-gradient(to right, rgba(26, 255, 140, 0.7), rgba(26, 255, 255, 0.7));" />
+                                 </children>
+                                 <BorderPane.margin>
+                                    <Insets left="60.0" right="60.0" top="10.0" />
+                                 </BorderPane.margin>
+                                 <padding>
+                                    <Insets left="20.0" right="20.0" />
+                                 </padding>
+                              </VBox>
+                           </center>
+                        </BorderPane>
+                     </children>
+                        </Pane>
+                    </center>
+                    <bottom>
+                        <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="50.0" BorderPane.alignment="CENTER">
+                            <children>
+                        <Button id="back-button" mnemonicParsing="false" onAction="#backButtonClick" prefHeight="29.0" prefWidth="110.0" text="Back">
+                           <HBox.margin>
+                              <Insets bottom="20.0" />
+                           </HBox.margin>
+                        </Button>
+                                <Button id="sign-up-button" mnemonicParsing="false" onAction="#signUpButtonClick" prefHeight="26.0" prefWidth="110.0" text="Sign Up">
+                                    <HBox.margin>
+                                        <Insets bottom="20.0" />
+                                    </HBox.margin>
+                                    <font>
+                                        <Font name="Wawati SC Regular" size="13.0" />
+                                    </font>
+                                </Button>
+                                <Button id="exit-button" mnemonicParsing="false" onAction="#exitButtonClick" prefHeight="29.0" prefWidth="110.0" text="Exit">
+                                    <HBox.margin>
+                                        <Insets bottom="20.0" />
+                                    </HBox.margin>
+                                    <font>
+                                        <Font name="Wawati SC Regular" size="13.0" />
+                                    </font></Button>
+                            </children>
+                        </HBox>
+                    </bottom>
+                    <top>
+                        <VBox alignment="CENTER" prefHeight="161.0" prefWidth="502.0" BorderPane.alignment="CENTER_LEFT">
+                            <children>
+                                <ImageView fitHeight="120.0" fitWidth="120.0" opacity="0.8" pickOnBounds="true">
+                                    <image>
+                                        <Image url="@../pictures/Telegram-Logo.png" />
+                                    </image>
+                                </ImageView>
+                                <Label prefHeight="42.0" prefWidth="297.0" style="-fx-alignment: center;" text="AdminGram">
+                                    <font>
+                                        <Font name="Wawati SC Regular" size="29.0" />
+                                    </font>
+                                </Label>
+                            </children>
+                        </VBox>
+                    </top>
+                </BorderPane>
+            </children>
+        </AnchorPane>
+    </children>
+</GridPane>

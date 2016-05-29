@@ -1,0 +1,19 @@
+.root{
+    -fx-background-color: rgba(0, 0, 0, 0.0);
+    -fx-background-insets: 40;
+    -fx-effect: dropshadow(gaussian, rgb(53, 16, 99), 40, 0, 0, 0);
+    -fx-border-radius: 20;
+}
+
+.theme{
+    -fx-background-color: linear-gradient(to right, rgba(26, 255, 140, 0.7), rgba(26, 255, 255, 0.7));
+}
+
+.label{
+    -fx-text-fill: #FFFFFF;
+}
+
+.input{
+    -fx-text-fill: rgb(255, 255, 255);
+}
+

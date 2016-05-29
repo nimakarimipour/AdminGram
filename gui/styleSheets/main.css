@@ -1,0 +1,9 @@
+.root{
+    -fx-background-color: rgba(0, 0, 0, 0.0);
+    -fx-background-insets: 40;
+    -fx-border-radius: 20;
+}
+
+.theme{
+    -fx-background-color: linear-gradient(to right, rgba(20, 20, 20, 0.7), rgba(10, 10, 10, 0.7));
+}

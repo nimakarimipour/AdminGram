@@ -35,6 +35,7 @@ public class SideBarItem extends BorderPane {
         setUpChildren(logo);
         setUpAnimation();
         setFills();
+        
     }
 
 
